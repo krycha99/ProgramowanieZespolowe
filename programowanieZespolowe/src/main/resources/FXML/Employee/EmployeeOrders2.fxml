@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane prefHeight="450.0" prefWidth="1000.0" styleClass="View1" stylesheets="/CSS/css.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Employee.EmployeeOrders2">
+    <children>
+        <Button fx:id="orderCancel" layoutX="684.0" layoutY="363.0" mnemonicParsing="false" onAction="#orderCancel" styleClass="Button1" text="Anuluj zamówienie" />
+        <VBox layoutX="32.0" layoutY="20.0" prefHeight="410.0" prefWidth="450.0">
+            <children>
+                <Label text="ID_Klienta:" />
+                <TextField fx:id="orderDetailIdCustomer" editable="false" />
+                <Label text="Imie:" />
+                <TextField fx:id="orderDetailName" editable="false" />
+                <Label text="Nazwisko:" />
+                <TextField fx:id="orderDetailSurname" editable="false" />
+                <Label text="Mail:" />
+                <TextField fx:id="orderDetailMail" editable="false" />
+                <Label text="adres:" />
+                <TextField fx:id="orderDetailAdress" editable="false" />
+                <Label text=" Opis do zamówienia:" />
+                <TextField fx:id="orderDetailDetail" editable="false" prefHeight="166.0" prefWidth="378.0" />
+            </children>
+        </VBox>
+        <VBox layoutX="517.0" layoutY="20.0" prefHeight="325.0" prefWidth="450.0">
+            <children>
+                <Label text="ID_zamówienia:" />
+                <TextField fx:id="orderDetailIdOrder" editable="false" />
+                <Label text="Zamówienie:" />
+                <TableView fx:id="orderDetailTableView" prefHeight="212.0" prefWidth="354.0">
+                    <columns>
+                        <TableColumn fx:id="orderDetailProduct" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="Przedmiot" />
+                        <TableColumn fx:id="orderDetailPrice" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Cena" />
+                        <TableColumn fx:id="orderDetailQuantity" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Ilość" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" fx:id="anchorId" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.User.InvoicesData">
+    <children>
+        <TableView fx:id="ordersTable" prefHeight="400.0" prefWidth="850.0">
+            <columns>
+                <TableColumn fx:id="orderID" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Zamówienie" />
+                <TableColumn fx:id="date" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Data" />
+                <TableColumn fx:id="statement" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Status" />
+                <TableColumn fx:id="payment" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Metoda płatności" />
+                <TableColumn fx:id="details" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="Sczegóły" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

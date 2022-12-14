@@ -1,0 +1,334 @@
+
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .label {
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: #090a0c,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114, 131, 148, 0.9), rgba(255, 255, 255, 0));
+    -fx-background-radius: 5, 4, 3, 5;
+    -fx-background-insets: 0, 1, 2, 0;
+}
+
+.table-view .scroll-bar:horizontal *, .scroll-bar:vertical * {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-wrap-text: true;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-font-family: "David Libre";
+    -fx-text-fill: linear-gradient(#47476b, #191d22);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-background-color: transparent;
+}
+
+.table-row-cell {
+    -fx-background-color: #cccccc;
+    -fx-opacity: 0.9;
+
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #b3b3b3;
+    -fx-opacity: 0.9;
+}
+
+.table-view .filler {
+    -fx-background-color: transparent;
+
+}
+
+
+.addCart, #cartDelProduct, .employeeShopButton {
+    -fx-alignment: center;
+}
+
+#mainView {
+
+    -fx-background-image: url("/img/Backgrounds/background1.jpeg");
+    -fx-background-size: cover;
+
+}
+
+.View1 {
+    -fx-background-image: url("/img/Backgrounds/loginbackground4.jpg");
+    -fx-background-size: cover;
+}
+
+#addCart {
+    -fx-pref-width: 50px;
+    -fx-pref-height: 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-image: url("/img/icon/addCart.png");
+    -fx-background-size: 40px 40px;
+}
+
+#delCart {
+    -fx-pref-width: 50px;
+    -fx-pref-height: 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-image: url("/img/icon/del.png");
+    -fx-background-size: 40px 40px;
+}
+
+#menuButton .button {
+    -fx-background-color: #090a0c,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114, 131, 148, 0.9), rgba(255, 255, 255, 0));
+    -fx-background-radius: 5, 4, 3, 5;
+    -fx-background-insets: 0, 1, 2, 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-font-family: "David Libre";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-padding: 10 20 10 20;
+}
+
+.menu .label {
+    -fx-text-fill: red;
+}
+
+#login, #loginButton {
+    -fx-background-color: linear-gradient(#b3b3cc, #666699);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+
+#Title, #Title2 {
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-font-weight: bold;
+    -fx-font-size: 30;
+}
+
+#register, #CartButton, #setingButton, #registerButton {
+    -fx-background-color: linear-gradient(#e6e6e6, #a6a6a6);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+
+#logoutButton {
+    -fx-background-color: linear-gradient(#b3b3cc, #666699);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+
+#userNameText {
+    -fx-padding: 10px;
+    -fx-background-color: #b3b3b3;
+    -fx-opacity: 0.9;
+}
+
+#employeeEditButton, #processorEditButton, #customerEditButton {
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-image: url("/img/icon/edit.png");
+    -fx-background-size: 30px 30px;
+}
+
+#employeeDelButton, #processorDelButton, #customerDelButton {
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-image: url("/img/icon/del.png");
+    -fx-background-size: 30px 30px;
+}
+
+.Button1 {
+    -fx-background-color: #090a0c,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114, 131, 148, 0.9), rgba(255, 255, 255, 0));
+    -fx-background-radius: 5, 4, 3, 5;
+    -fx-background-insets: 0, 1, 2, 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-font-family: "David Libre";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-padding: 10 20 10 20;
+}
+
+#acceptButton, #backButton, #addButton, #deleteButton, #editButton, .buttonOnSeting  {
+    -fx-background-color: #090a0c,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114, 131, 148, 0.9), rgba(255, 255, 255, 0));
+    -fx-background-radius: 5, 4, 3, 5;
+    -fx-background-insets: 0, 1, 2, 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-font-family: "David Libre";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-padding: 10 20 10 20;
+}
+
+.volumePrice {
+    -fx-alignment: center;
+}
+
+.info {
+    -fx-alignment: center-left;
+    -fx-wrap-text: true;
+}
+
+#UserData .label {
+    -fx-wrap-text: true;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-font-family: "David Libre";
+    -fx-text-fill: linear-gradient(#47476b, #191d22);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+
+}
+
+#UserData {
+    -fx-background-color: #cccccc;
+    -fx-opacity: 0.9;
+}
+
+#UserData .button {
+    -fx-background-color: #090a0c,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114, 131, 148, 0.9), rgba(255, 255, 255, 0));
+    -fx-background-radius: 5, 4, 3, 5;
+    -fx-background-insets: 0, 1, 2, 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-font-family: "David Libre";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-padding: 10 20 10 20;
+}
+
+.menuButton {
+    -fx-background-color: #090a0c,
+    linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+    linear-gradient(#20262b, #191d22),
+    radial-gradient(center 50% 0%, radius 100%, rgba(114, 131, 148, 0.9), rgba(255, 255, 255, 0));
+    -fx-background-radius: 5, 4, 3, 5;
+    -fx-background-insets: 0, 1, 2, 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-font-family: "David Libre";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+    -fx-padding: 10 20 10 20;
+}
+
+.tab .tab-label {
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+}
+
+#cartSuma {
+    -fx-wrap-text: true;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-font-family: "David Libre";
+    -fx-text-fill: linear-gradient(#47476b, #191d22);
+    -fx-font-weight: bold;
+    -fx-background-color: #cccccc;
+    -fx-padding: 10 20 10 20;
+    -fx-font-size: 1.1em;
+}
+
+.comboView {
+    -fx-background-color: white;
+    -fx-border-color: #b8b4b4;
+    -fx-border-radius: 2 2 2 2;
+}
+
+#assortmentButtonAccept {
+    -fx-pref-width: 50px;
+    -fx-pref-height: 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-image: url("/img/icon/accept.png");
+    -fx-background-size: 40px 40px;
+}
+
+#assortmentButtonCancel {
+    -fx-pref-width: 50px;
+    -fx-pref-height: 50px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-image: url("/img/icon/cancel.png");
+    -fx-background-size: 40px 40px;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-padding: 0.0em, 0.0em, 0.0em ,0.0em;
+}
+
+.tab-pane {
+    -fx-tab-max-width: 200px;
+    -fx-tab-min-width: 200px;
+}
+.tab-down-button {
+-fx-padding: 0;
+}
+
+.tab-down-button .arrow {
+-fx-padding: 0;
+}
+
+#reportAnchorPane {
+    -fx-background-color: #cccccc;
+    -fx-opacity: 0.9;
+}
+
+#reportAnchorPane {
+-fx-wrap-text: true;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+    -fx-font-family: "David Libre";
+    -fx-text-fill: linear-gradient(#47476b, #191d22);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.1em;
+}
+
+#reportAnchorPane .date-picker > .text-field {
+-fx-background-color:
+        linear-gradient(to bottom, derive(-fx-text-box-border, -10%), -fx-text-box-border),
+        linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+    -fx-background-insets: 1 0 1 1;
+    -fx-background-radius: 2 0 0 2;
+}
+
+#reportAnchorPane .date-picker:focused > .text-field,
+#reportAnchorPane .date-picker > .text-field:focused {
+    -fx-background-color:
+        -fx-control-inner-background,
+        -fx-faint-focus-color,
+        linear-gradient(from 0px 0px to 0px 5px, derive(-fx-control-inner-background, -9%), -fx-control-inner-background);
+    -fx-background-insets: 1 0 1 1, 1 0 1 1, 3 2 3 3;
+    -fx-background-radius: 2 0 0 2, 1 0 0 1, 0;
+}

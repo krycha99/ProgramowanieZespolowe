@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane prefHeight="450.0" prefWidth="1000.0" styleClass="View1" stylesheets="/CSS/css.css"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controller.Admin.CustomersOrder2">
+    <children>
+        <Button fx:id="orderCancel" styleClass="Button1" layoutX="759.0" layoutY="365.0" mnemonicParsing="false"
+                onAction="#orderCancel" text="Anuluj zamówienie"/>
+        <Button fx:id="orderConfirm" styleClass="Button1" layoutX="647.0" layoutY="365.0" mnemonicParsing="false"
+                onAction="#orderConfirm" text="Zatwierdź"/>
+        <VBox layoutX="32.0" layoutY="20.0" prefHeight="410.0" prefWidth="450.0">
+            <children>
+                <Label text="ID_Klienta:"/>
+                <TextField fx:id="orderDetailIdCustomer"/>
+                <Label text="Imie:"/>
+                <TextField fx:id="orderDetailName"/>
+                <Label text="Nazwisko:"/>
+                <TextField fx:id="orderDetailSurname"/>
+                <Label text="Mail:"/>
+                <TextField fx:id="orderDetailMail"/>
+                <Label text="adres:"/>
+                <TextField fx:id="orderDetailAdress"/>
+                <Label text=" Opis do zamówienia:"/>
+                <TextField fx:id="orderDetailDetail" prefHeight="166.0" prefWidth="378.0"/>
+            </children>
+        </VBox>
+        <VBox layoutX="517.0" layoutY="20.0" prefHeight="325.0" prefWidth="450.0">
+            <children>
+                <Label text="ID_zamówienia:"/>
+                <TextField fx:id="orderDetailIdOrder"/>
+                <Label text="Zamówienie:"/>
+                <TableView fx:id="orderDetailTableView" prefHeight="212.0" prefWidth="354.0">
+                    <columns>
+                        <TableColumn fx:id="orderDetailProduct" maxWidth="250.0" minWidth="250.0" prefWidth="250.0"
+                                     text="Przedmiot"/>
+                        <TableColumn fx:id="orderDetailPrice" maxWidth="100.0" minWidth="100.0" prefWidth="100.0"
+                                     text="Cena"/>
+                        <TableColumn fx:id="orderDetailQuantity" maxWidth="100.0" minWidth="100.0" prefWidth="100.0"
+                                     text="Ilość"/>
+                    </columns>
+                </TableView>
+                <Label text="Status:" fx:id="orderDetailLabelStatus"/>
+                <ComboBox fx:id="orderDetailStatus" styleClass="comboView" prefHeight="26.0" prefWidth="260.0"/>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

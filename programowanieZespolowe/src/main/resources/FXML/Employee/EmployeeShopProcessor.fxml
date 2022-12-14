@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="/CSS/css.css" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Employee.EmployeeShopProcessor">
+    <children>
+        <TableView fx:id="processorTable" prefHeight="450.0" prefWidth="1200.0">
+            <columns>
+                <TableColumn fx:id="processorImg" minWidth="100.0" prefWidth="75.0" text="Obrazek"/>
+                <TableColumn fx:id="processorName" minWidth="150.0" prefWidth="75.0" text="Nazwa"/>
+                <TableColumn fx:id="processorVolume" prefWidth="50.0" text="Ilość"/>
+                <TableColumn fx:id="processorInfo" minWidth="700.0" prefWidth="700.0" text="Szczegółowe informacje"/>
+                <TableColumn fx:id="processorPrice" maxWidth="100.0" minWidth="100.0" prefWidth="100.0"
+                             styleClass="volumePrice" text="Cena"/>
+                <TableColumn fx:id="processorAddCart" styleClass="addCart" minWidth="100.0" prefWidth="100.0"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

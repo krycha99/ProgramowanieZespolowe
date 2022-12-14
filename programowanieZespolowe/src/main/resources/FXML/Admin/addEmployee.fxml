@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefWidth="400.0" styleClass="View1" xmlns="http://javafx.com/javafx/8" stylesheets="/CSS/css.css"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin.AddEmployee">
+    <children>
+        <VBox prefHeight="60.0" prefWidth="400.0" style="-fx-alignment: center;">
+            <children>
+                <Label text="Dodawanie pracownika">
+                    <font>
+                        <Font size="36.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox layoutY="60.0" prefWidth="400.0" style="-fx-alignment: center;">
+            <children>
+                <Label text="Imie">
+                    <VBox.margin>
+                        <Insets top="20.0"/>
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="addEmployeeName" maxWidth="200.0"/>
+                <Label text="Nazwisko">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="addEmployeeSurname" maxWidth="200.0"/>
+                <Label text="Email">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="addEmployeeEmail" maxWidth="200.0"/>
+                <Label text="Adres zamieszkania">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="addEmployeeAddress" maxWidth="200.0"/>
+                <Label text="Numer telefonu">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="addEmployeeNumber" maxWidth="200.0"/>
+                <Label text="Login">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="addEmployeeLogin" maxWidth="200.0"/>
+                <Label text="Hasło">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <PasswordField fx:id="addEmployeePassword" maxWidth="200.0"/>
+                <Label text="Pensja">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="addEmployeeSalary" maxWidth="200.0"/>
+                <Label text="Rola pracownika">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <ComboBox fx:id="addEmployeePosition" styleClass="comboView" prefWidth="200.0"/>
+                <Button fx:id="addEmployeeButton" styleClass="Button1" mnemonicParsing="false" onAction="#addEmployee"
+                        text="Dodaj pracownika!">
+                    <VBox.margin>
+                        <Insets bottom="20.0" top="10.0"/>
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

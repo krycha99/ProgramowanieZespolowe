@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controller.Employee.Assortment">
+    <children>
+        <VBox prefHeight="100.0" prefWidth="1200.0">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/img/icon/logo.png"/>
+                            </image>
+                            <HBox.margin>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="Title" prefHeight="40.0" prefWidth="200.0" text="Sklep ">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                            <HBox.margin>
+                                <Insets top="30.0"/>
+                            </HBox.margin>
+                        </Label>
+                        <Label fx:id="userNameText" prefHeight="40.0" prefWidth="150.0" text="Pracownik">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                            <HBox.margin>
+                                <Insets left="600.0" top="30.0"/>
+                            </HBox.margin>
+                        </Label>
+                        <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logout" prefHeight="40.0"
+                                prefWidth="100.0" text="Wyloguj">
+                            <HBox.margin>
+                                <Insets left="25.0" top="30.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox layoutY="100.0" prefHeight="50.0" prefWidth="1200.0">
+            <children>
+                <HBox fx:id="menuButton" prefHeight="50.0" prefWidth="970.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#back" prefHeight="51.0" prefWidth="60.0"
+                                text="Back"/>
+                        <Button mnemonicParsing="false" onAction="#processor" prefHeight="50.0" prefWidth="228.0"
+                                text="Procesory"/>
+                        <Button mnemonicParsing="false" onAction="#graphicCard" prefHeight="50.0" prefWidth="228.0"
+                                text="Karty graficzne"/>
+                        <Button mnemonicParsing="false" onAction="#ram" prefHeight="50.0" prefWidth="228.0"
+                                text="Pamięć RAM"/>
+                        <Button mnemonicParsing="false" onAction="#drive" prefHeight="50.0" prefWidth="228.0"
+                                text="Dyski twarde"/>
+                        <Button mnemonicParsing="false" onAction="#power" prefHeight="54.0" prefWidth="228.0"
+                                text="Zasilacze"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Pane fx:id="view" layoutY="150.0" prefHeight="450.0" prefWidth="1200.0"/>
+    </children>
+</AnchorPane>

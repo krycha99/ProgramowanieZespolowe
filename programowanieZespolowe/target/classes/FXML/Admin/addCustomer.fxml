@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="addCustomerView" styleClass="View1" prefWidth="400.0" stylesheets="/CSS/css.css"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controller.Admin.AddCustomer">
+    <children>
+        <VBox prefHeight="60.0" prefWidth="400.0" style="-fx-alignment: center;">
+            <children>
+                <Label text="Dodawanie klienta">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                    <font>
+                        <Font size="36.0"/>
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <VBox layoutY="60.0" prefWidth="400.0" style="-fx-alignment: top-center;">
+            <children>
+                <Label text="Imię:">
+                    <VBox.margin>
+                        <Insets top="20.0"/>
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="addCustomerName" maxWidth="200.0"/>
+                <Label text="Nazwisko:">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="addCustomerSurname" maxWidth="200.0"/>
+                <Label text="Login:">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="addCustomerLogin" maxWidth="200.0">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </TextField>
+                <Label text="Hasło:">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <PasswordField fx:id="addCustomerPassword" maxWidth="200.0"/>
+                <Label text="Email">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="addCustomerEmail" maxWidth="200.0"/>
+                <Label text="Numer telefonu">
+                    <VBox.margin>
+                        <Insets top="10.0"/>
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="addCustomerNumber" maxWidth="200.0"/>
+                <Button fx:id="addCustomerButton" styleClass="Button1" defaultButton="true" mnemonicParsing="false"
+                        onAction="#addCustomer"
+                        text="Dodaj klienta!">
+                    <VBox.margin>
+                        <Insets bottom="20.0" top="10.0"/>
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

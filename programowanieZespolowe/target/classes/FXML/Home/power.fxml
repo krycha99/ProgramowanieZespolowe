@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="/CSS/css.css" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Home.Power">
+    <children>
+        <TableView fx:id="powerTable" prefHeight="450.0" prefWidth="1200.0">
+            <columns>
+                <TableColumn fx:id="powerImg" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Obrazek"/>
+                <TableColumn fx:id="powerName" styleClass="info" maxWidth="150.0" minWidth="150.0" prefWidth="150.0"
+                             text="Nazwa"/>
+                <TableColumn fx:id="powerVolume" styleClass="volumePrice" maxWidth="50.0" minWidth="50.0"
+                             prefWidth="50.0" text="Ilość"/>
+                <TableColumn fx:id="powerInfo" styleClass="info" maxWidth="700.0" minWidth="700.0" prefWidth="700.0"
+                             text="Szczegółowe informacje"/>
+                <TableColumn fx:id="powerPrice" styleClass="volumePrice" maxWidth="100.0" minWidth="100.0"
+                             prefWidth="100.0" text="Cena"/>
+                <TableColumn fx:id="powerAddCart" styleClass="addCart" maxWidth="100.0" minWidth="100.0" prefWidth="100.0"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

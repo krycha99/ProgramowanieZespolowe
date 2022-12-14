@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controller.Admin.EmployeeOrder">
+    <children>
+        <TableView fx:id="assortmentTable" prefHeight="450.0" prefWidth="1200.0">
+            <columns>
+                <TableColumn fx:id="assortmentImg" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Obrazek"/>
+                <TableColumn fx:id="assortmentName" maxWidth="150.0" minWidth="150.0" prefWidth="150.0"
+                             styleClass="info" text="Nazwa"/>
+                <TableColumn fx:id="assortmentQuantity" maxWidth="50.0" minWidth="50.0" prefWidth="50.0"
+                             styleClass="volumePrice" text="Ilość"/>
+                <TableColumn fx:id="assortmentCategory" maxWidth="100.0" minWidth="100.0" prefWidth="100.0"
+                             styleClass="info" text="Kategoria"/>
+                <TableColumn fx:id="assortmentDescription" maxWidth="500.0" minWidth="500.0" prefWidth="500.0"
+                             styleClass="info" text="Szczegółowe informacje"/>
+                <TableColumn fx:id="assortmentPrice" maxWidth="100.0" minWidth="100.0" prefWidth="100.0"
+                             styleClass="volumePrice" text="Cena"/>
+                <TableColumn fx:id="assorntmentAccept" maxWidth="100.0" minWidth="100.0" prefWidth="100.0"
+                             styleClass="addCart"/>
+                <TableColumn fx:id="assorntmentCancel" maxWidth="100.0" minWidth="100.0" prefWidth="100.0"
+                             styleClass="addCart"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

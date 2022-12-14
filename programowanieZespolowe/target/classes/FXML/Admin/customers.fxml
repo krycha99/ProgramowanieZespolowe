@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin.Customers">
+    <children>
+        <VBox prefHeight="450.0" prefWidth="1200.0" style="-fx-alignment: center;">
+            <children>
+                <Button fx:id="addCustomer" mnemonicParsing="false" onAction="#addCustomer" styleClass="menuButton" text="Dodaj klienta">
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </VBox.margin>
+                </Button>
+                <TableView fx:id="customerTableView" prefHeight="450.0" prefWidth="1200.0">
+                    <columns>
+                        <TableColumn fx:id="customerName" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" styleClass="info" text="Imie" />
+                        <TableColumn fx:id="customerSurname" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" styleClass="info" text="Nazwisko" />
+                        <TableColumn fx:id="customerNumber" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" styleClass="info" text="Numer telefonu" />
+                        <TableColumn fx:id="customerEmail" maxWidth="150.0" minWidth="225.0" prefWidth="150.0" styleClass="info" text="Email" />
+                        <TableColumn fx:id="customerAddress" maxWidth="225.0" minWidth="225.0" prefWidth="225.0" styleClass="info" text="Adres zamieszkania" />
+                        <TableColumn fx:id="customerLogin" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" styleClass="info" text="Login" />
+                        <TableColumn fx:id="customerEdit" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" text="Edycja" />
+                        <TableColumn fx:id="customerDel" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" text="Usuń" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

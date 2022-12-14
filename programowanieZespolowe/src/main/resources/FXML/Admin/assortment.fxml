@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controller.Admin.Assortment">
+    <children>
+        <TabPane prefHeight="450.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab styleClass="menuButton" text="Procesor">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="processorTable" prefHeight="422.0" prefWidth="1200.0">
+                                    <columns>
+                                        <TableColumn fx:id="processorImg" maxWidth="100.0" minWidth="100.0"
+                                                     prefWidth="100.0" text="Obrazek"/>
+                                        <TableColumn fx:id="processorName" maxWidth="150.0" minWidth="150.0"
+                                                     prefWidth="150.0" styleClass="info" text="Nazwa"/>
+                                        <TableColumn fx:id="processorVolume" maxWidth="65.0" minWidth="65.0"
+                                                     prefWidth="50.0" styleClass="volumePrice" text="Ilość"/>
+                                        <TableColumn fx:id="processorInfo" maxWidth="725.0" minWidth="720.0"
+                                                     prefWidth="700.0" styleClass="info" text="Szczegółowe informacje"/>
+                                        <TableColumn fx:id="processorPrice" maxWidth="95" minWidth="95"
+                                                     prefWidth="75.0" styleClass="volumePrice" text="Cena"/>
+                                        <TableColumn fx:id="procesorDel" maxWidth="70.0" minWidth="50.0"
+                                                      prefWidth="70.0" styleClass="volumePrice" text="Usuń"/>
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab styleClass="menuButton" text="Karta graficzna">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="graphicTable" prefHeight="422.0" prefWidth="1200.0">
+                                    <columns>
+                                        <TableColumn fx:id="graphicImg" maxWidth="100.0" minWidth="100.0"
+                                                     prefWidth="100.0" text="Obrazek"/>
+                                        <TableColumn fx:id="graphicName" maxWidth="150.0" minWidth="150.0"
+                                                     prefWidth="150.0" styleClass="info" text="Nazwa"/>
+                                        <TableColumn fx:id="graphicVolume" maxWidth="65.0" minWidth="65.0"
+                                                     prefWidth="50.0" styleClass="volumePrice" text="Ilość"/>
+                                        <TableColumn fx:id="graphicInfo" maxWidth="725.0" minWidth="720.0"
+                                                     prefWidth="700.0" styleClass="info" text="Szczegółowe informacje"/>
+                                        <TableColumn fx:id="graphicPrice" maxWidth="95" minWidth="95"
+                                                     prefWidth="80" styleClass="volumePrice" text="Cena"/>
+                                        <TableColumn fx:id="graphicDel" maxWidth="70.0" minWidth="50.0"
+                                                      prefWidth="70.0" styleClass="volumePrice" text="Usuń"/>
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab styleClass="menuButton" text="Pamięć RAM">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="ramTable" prefHeight="422.0" prefWidth="1200.0">
+                                    <columns>
+                                        <TableColumn fx:id="ramImg" maxWidth="100.0" minWidth="100.0" prefWidth="100.0"
+                                                     text="Obrazek"/>
+                                        <TableColumn fx:id="ramName" maxWidth="150.0" minWidth="150.0" prefWidth="150.0"
+                                                     styleClass="info" text="Nazwa"/>
+                                        <TableColumn fx:id="ramVolume" maxWidth="65.0" minWidth="65.0" prefWidth="50.0"
+                                                     styleClass="volumePrice" text="Ilość"/>
+                                        <TableColumn fx:id="ramInfo" maxWidth="725.0" minWidth="720.0" prefWidth="700.0"
+                                                     styleClass="info" text="Szczegółowe informacje"/>
+                                        <TableColumn fx:id="ramPrice" maxWidth="95" minWidth="95"
+                                                     prefWidth="80" styleClass="volumePrice" text="Cena"/>
+                                        <TableColumn fx:id="ramDel" maxWidth="70.0" minWidth="50.0"
+                                                      prefWidth="70.0" styleClass="volumePrice" text="Usuń"/>
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab styleClass="menuButton" text="Dyski twarde">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="driveTable" prefHeight="422.0" prefWidth="1200.0">
+                                    <columns>
+                                        <TableColumn fx:id="driveImg" maxWidth="100.0" minWidth="100.0"
+                                                     prefWidth="100.0" text="Obrazek"/>
+                                        <TableColumn fx:id="driveName" maxWidth="150.0" minWidth="150.0"
+                                                     prefWidth="150.0" styleClass="info" text="Nazwa"/>
+                                        <TableColumn fx:id="driveVolume" maxWidth="65.0" minWidth="65.0"
+                                                     prefWidth="50.0" styleClass="volumePrice" text="Ilość"/>
+                                        <TableColumn fx:id="driveInfo" maxWidth="725.0" minWidth="720.0"
+                                                     prefWidth="705.0" styleClass="info" text="Szczegółowe informacje"/>
+                                        <TableColumn fx:id="drivePrice" maxWidth="95" minWidth="95"
+                                                     prefWidth="80" styleClass="volumePrice" text="Cena"/>
+                                        <TableColumn fx:id="driveDel" maxWidth="70.0" minWidth="50.0"
+                                                      prefWidth="70.0" styleClass="volumePrice" text="Usuń"/>
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab styleClass="menuButton" text="Zasilacz">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="powerTable" prefHeight="422.0" prefWidth="1200.0">
+                                    <columns>
+                                        <TableColumn fx:id="powerImg" maxWidth="100.0" minWidth="100.0"
+                                                     prefWidth="100.0" text="Obrazek"/>
+                                        <TableColumn fx:id="powerName" maxWidth="100.0" minWidth="150.0"
+                                                     prefWidth="150.0" styleClass="info" text="Nazwa"/>
+                                        <TableColumn fx:id="powerVolume" maxWidth="65.0" minWidth="65.0"
+                                                     prefWidth="50.0" styleClass="volumePrice" text="Ilość"/>
+                                        <TableColumn fx:id="powerInfo" maxWidth="725.0" minWidth="720.0"
+                                                     prefWidth="700.0" styleClass="info" text="Szczegółowe informacje"/>
+                                        <TableColumn fx:id="powerPrice" maxWidth="95" minWidth="95"
+                                                     prefWidth="80" styleClass="volumePrice" text="Cena"/>
+                                        <TableColumn fx:id="powerDel" maxWidth="70.0" minWidth="50.0"
+                                                     prefWidth="70.0" styleClass="volumePrice" text="Usuń"/>
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

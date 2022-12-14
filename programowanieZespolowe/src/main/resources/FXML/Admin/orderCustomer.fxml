@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin.CustomersOrder">
+    <children>
+        <TableView fx:id="ordersTable" prefHeight="450.0" prefWidth="1200.0">
+            <columns>
+                <TableColumn fx:id="orderID" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Zamówienie" />
+                <TableColumn fx:id="customer" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Klient" />
+                <TableColumn fx:id="date" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Data" />
+                <TableColumn fx:id="statement" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Status" />
+                <TableColumn fx:id="payment" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" text="Metoda płatności" />
+                <TableColumn fx:id="details" maxWidth="450.0" minWidth="200.0" prefWidth="200.0" text="Sczegóły" />
+                <TableColumn fx:id="details2" maxWidth="450.0" minWidth="250.0" prefWidth="250.0" text="Faktury" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

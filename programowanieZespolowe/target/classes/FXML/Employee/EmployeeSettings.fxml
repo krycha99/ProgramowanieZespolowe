@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane prefHeight="450.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controller.Employee.EmployeeSettings">
+    <children>
+        <VBox layoutX="32.0" layoutY="24.0" prefHeight="338.0" prefWidth="271.0">
+            <children>
+                <Button styleClass="buttonOnSeting" mnemonicParsing="false" onAction="#setting" prefHeight="80.0" prefWidth="277.0"
+                        text="Moje Dane"/>
+                <Button styleClass="buttonOnSeting" mnemonicParsing="false" onAction="#orders" prefHeight="80.0" prefWidth="277.0"
+                        text="Moje Zamówienia"/>
+                <Button styleClass="buttonOnSeting" mnemonicParsing="false" onAction="#invoices" prefHeight="80.0" prefWidth="277.0"
+                        text="Faktury"/>
+            </children>
+        </VBox>
+        <AnchorPane fx:id="SettingPane" layoutX="328.0" layoutY="24.0" prefHeight="400.0" prefWidth="850.0"/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane fx:id="addProductView" prefHeight="450.0" prefWidth="1000.0" styleClass="View1" stylesheets="/CSS/css.css"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controller.Employee.AddProductEmployee">
+    <children>
+        <VBox layoutX="36.0" layoutY="14.0" prefHeight="415.0" prefWidth="450.0">
+            <children>
+                <Label text="Nazwa:"/>
+                <TextField fx:id="addName"/>
+                <Label text="Cena:"/>
+                <TextField fx:id="addPrice"/>
+                <Label text="Opis:"/>
+                <TextArea fx:id="addDescription" prefHeight="200.0" prefWidth="200.0"/>
+                <Label text="Ilość:"/>
+                <TextField fx:id="addQuantity"/>
+                <Label text="Obrazek:"/>
+                <Button mnemonicParsing="false" styleClass="Button1" onAction="#addImage" text="Wybierz plik"/>
+            </children>
+        </VBox>
+        <Button fx:id="addConfirm" layoutX="664.0" layoutY="184.0" mnemonicParsing="false" onAction="#addConfirm"
+                prefHeight="60.0" prefWidth="134.0" styleClass="Button1" text="Zatwierdz"/>
+    </children>
+</AnchorPane>

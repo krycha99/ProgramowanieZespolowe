@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane stylesheets="/CSS/css.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller.User.UserRam" prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <TableView fx:id="ramTable" prefHeight="450.0" prefWidth="1200.0">
+            <columns>
+                <TableColumn fx:id="ramImg" minWidth="100.0" prefWidth="75.0" text="Obrazek"/>
+                <TableColumn fx:id="ramName" minWidth="150.0" prefWidth="75.0" text="Nazwa"/>
+                <TableColumn fx:id="ramVolume" prefWidth="50.0" text="Ilość"/>
+                <TableColumn fx:id="ramInfo" minWidth="700.0" prefWidth="75.0" text="Szczegółowe informacje"/>
+                <TableColumn fx:id="ramPrice" styleClass="volumePrice" maxWidth="100.0" minWidth="100.0"
+                             prefWidth="100.0" text="Cena"/>
+                <TableColumn fx:id="ramAddCart" styleClass="addCart" minWidth="100.0" prefWidth="75.0"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

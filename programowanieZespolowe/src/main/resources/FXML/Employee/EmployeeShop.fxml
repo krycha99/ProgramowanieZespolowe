@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane fx:id="mainView" stylesheets="/CSS/css.css" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Employee.EmployeeShop">
+    <children>
+        <VBox prefHeight="50.0" prefWidth="1200.0">
+            <children>
+                <HBox fx:id="menuButton" prefHeight="100.0" prefWidth="1200.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#processor" prefHeight="100.0" prefWidth="240.0"
+                                text="Procesory"/>
+                        <Button mnemonicParsing="false" onAction="#graphicCard" prefHeight="100.0" prefWidth="240.0"
+                                text="Karty graficzne"/>
+                        <Button mnemonicParsing="false" onAction="#ram" prefHeight="100.0" prefWidth="240.0"
+                                text="Pamięć RAM"/>
+                        <Button mnemonicParsing="false" onAction="#drive" prefHeight="100.0" prefWidth="240.0"
+                                text="Dyski twarde"/>
+                        <Button mnemonicParsing="false" onAction="#power" prefHeight="100.0" prefWidth="240.0"
+                                text="Zasilacze"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Pane fx:id="view" layoutY="50.0" prefHeight="450.0" prefWidth="1200.0"/>
+    </children>
+</AnchorPane>
