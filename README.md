@@ -1,2 +1,2 @@
 # ProgramowanieZespolowe
-Projekt z programowania zespołowego - sklep komputerowy (Java, JavaFX, MySql, JavaDoc)
+Projekt na zaliczenie przedmiotu Programowanie Zespołowe - sklep komputerowy (Java, JavaFX, MySql, JavaDoc)
